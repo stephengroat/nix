@@ -1,2 +1,13 @@
-os: osx
-script: ./tests/install-darwin.sh
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-5
+      - libseccomp-dev
+      - libxml2-utils
+      - libboost-all-dev
+env: GLOBAL_CXXFLAGS=' -std=c++14' CC=gcc-5 CXX=g++-5
+script: ./bootstrap.sh && ./configure --disable-doc-gen && make -j8
+#os: osx
+#script: ./tests/install-darwin.sh
