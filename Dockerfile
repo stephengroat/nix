@@ -11,7 +11,7 @@ RUN apt-get update && \
                        libboost-all-dev \
                        autoconf \
                        autoconf-archive \
-                       pkg-config \
+                       pkgconfig \
                        gettext \
                        libxml2-utils
 RUN mkdir /usr/src/nix
