@@ -16,3 +16,4 @@ RUN apt-get update && \
                        libxml2-utils
 RUN mkdir /usr/src/nix
 WORKDIR /usr/src/nix
+ENTRYPOINT ["/bin/bash","-c"]
