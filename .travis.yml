@@ -2,6 +2,6 @@ sudo: required
 services:
   - docker
 install: docker build -t nix-build .
-script: docker run --rm -v "$PWD":/usr/src/nix nix-build env && pkg-config --cflags libseccomp && ./bootstrap.sh && ./configure --disable-doc-gen && make
+script: docker run -v "$PWD":/usr/src/nix nix-build ./bootstrap.sh && ./configure --disable-doc-gen && make
 #os: osx
 #script: ./tests/install-darwin.sh
