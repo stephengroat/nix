@@ -15,7 +15,11 @@ RUN apt-get update && \
                        gettext \
                        libxml2-utils \
                        patch \
-                       bzip2
+                       bzip2 \
+                       flex \
+                       bison \
+                       xz \
+                       gettext
 RUN mkdir /usr/src/nix
 WORKDIR /usr/src/nix
 ENTRYPOINT ["/bin/bash","-c"]
