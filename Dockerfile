@@ -13,7 +13,8 @@ RUN apt-get update && \
                        autoconf-archive \
                        pkgconf \
                        gettext \
-                       libxml2-utils
+                       libxml2-utils \
+                       patch
 RUN mkdir /usr/src/nix
 WORKDIR /usr/src/nix
 ENTRYPOINT ["/bin/bash","-c"]
