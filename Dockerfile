@@ -18,8 +18,9 @@ RUN apt-get update && \
                        bzip2 \
                        flex \
                        bison \
-                       xz \
-                       gettext
+                       xz-utils \
+                       gettext \
+                       xsltproc
 RUN mkdir /usr/src/nix
 WORKDIR /usr/src/nix
 ENTRYPOINT ["/bin/bash","-c"]
