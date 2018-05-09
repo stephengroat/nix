@@ -20,7 +20,11 @@ RUN apt-get update && \
                        bison \
                        xz-utils \
                        gettext \
-                       xsltproc
+                       xsltproc \
+                       libssl-dev \
+                       brotli \
+                       graphviz \
+                       bro
 RUN mkdir /usr/src/nix
 WORKDIR /usr/src/nix
 ENTRYPOINT ["/bin/bash","-c"]
