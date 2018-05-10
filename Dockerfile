@@ -1,7 +1,6 @@
 FROM ubuntu:18.04
 
-ENV CC=gcc-5 \
-    CXX=g++-5 \
+ENV CXX=g++-5
 RUN apt-get update && \
     apt-get install -y g++-5 \
                        libseccomp-dev \
