@@ -26,7 +26,8 @@ RUN apt-get update && \
                        graphviz \
                        bro \
                        libbz2-dev \
-                       libsqlite3-dev
+                       libsqlite3-dev \
+                       libcurl4-gnutls-dev
 RUN mkdir /usr/src/nix
 WORKDIR /usr/src/nix
 ENTRYPOINT ["/bin/bash","-c"]
