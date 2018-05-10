@@ -25,7 +25,8 @@ RUN apt-get update && \
                        brotli \
                        graphviz \
                        bro \
-                       libbz2-dev
+                       libbz2-dev \
+                       sqlite3
 RUN mkdir /usr/src/nix
 WORKDIR /usr/src/nix
 ENTRYPOINT ["/bin/bash","-c"]
