@@ -24,7 +24,8 @@ RUN apt-get update && \
                        libssl-dev \
                        brotli \
                        graphviz \
-                       bro
+                       bro \
+                       libbz2-dev
 RUN mkdir /usr/src/nix
 WORKDIR /usr/src/nix
 ENTRYPOINT ["/bin/bash","-c"]
