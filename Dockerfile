@@ -27,7 +27,8 @@ RUN apt-get update && \
                        bro \
                        libbz2-dev \
                        libsqlite3-dev \
-                       libcurl4-gnutls-dev
+                       libcurl4-gnutls-dev \
+                       liblzma-dev
 RUN mkdir /usr/src/nix
 WORKDIR /usr/src/nix
 ENTRYPOINT ["/bin/bash","-c"]
