@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 ENV GLOBAL_CXXFLAGS=' -std=c++14' \
     CC=gcc-5 \
