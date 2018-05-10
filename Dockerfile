@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:16.04
 
 ENV GLOBAL_CXXFLAGS=' -std=c++14' \
     CC=gcc-5 \
@@ -26,7 +26,7 @@ RUN apt-get update && \
                        graphviz \
                        bro \
                        libbz2-dev \
-                       sqlite3
+                       libsqlite3-dev
 RUN mkdir /usr/src/nix
 WORKDIR /usr/src/nix
 ENTRYPOINT ["/bin/bash","-c"]
